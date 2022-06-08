@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  @apply bg-bg-dark !important
+}
+
+.ant-progress-text{
+  @apply text-white text-3xl font-bold !important;
+}
