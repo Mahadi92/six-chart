@@ -3,6 +3,7 @@ import Analytics from "./components/Analytics";
 import { IoMdArrowDropup } from "react-icons/io"
 import CircleProgress from "./components/CircleProgress";
 import LineChart from "./components/LineChart";
+import BarChart from "./components/BarChart";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       {/* <Analytics /> */}
 
 
-      <div className="flex items-center space-x-5">
+      <div className="flex items-center justify-center flex-wrap gap-5 py-10">
         {/* ----------------- First Card ----------------- */}
         <div className="w-72 bg-bg-primary rounded-lg py-4 px-6 text-white">
           <span className="tracking-wider text-gray-300">Total earning</span>
@@ -45,7 +46,7 @@ function App() {
             <span className="text-gray-500">98%</span>
           </div>
           <div className="flex items-end pt-2">
-            <h4 className="-mb-1  -mr-1 text-white text-xl font-thin">4.9PH</h4>
+            <h4 className="-mb-1 -mr-1 text-white text-xl font-thin">4.9PH</h4>
             <div>
               <LineChart />
             </div>
@@ -64,8 +65,14 @@ function App() {
             <span>NFTs Sold</span>
           </div>
         </div>
-
       </div>
+
+
+      <div className="">
+        a
+        <BarChart />
+      </div>
+
     </div>
   );
 }

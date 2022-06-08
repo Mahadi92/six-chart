@@ -4,7 +4,7 @@ const CircleProgress = () => {
 
   return <Progress
     type="circle"
-    width={100}
+    width={80}
     trailColor="rgb(0 0 0 / 0%)"
     strokeColor={{
       '0%': '#8AFF6C',

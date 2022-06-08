@@ -16,5 +16,5 @@ body{
 }
 
 .ant-progress-text{
-  @apply text-white text-3xl font-bold !important;
+  @apply text-white text-2xl font-bold !important;
 }
