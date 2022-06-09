@@ -78,13 +78,13 @@ const GradientColors2 = () => {
 const CustomBarChart = () => {
 
   return (
-    <div className=" w-full h-96 bg-bg rounded-lg py-4 sm:py-8 px-2 sm:px-6 custom-bar-chart">
+    <div className=" w-full h-96 bg-bg rounded-lg py-4 sm:py-8 px-0 sm:px-6 custom-bar-chart">
       <div>
-        <h2 className="text-white font-semibold text-2xl pl-2 sm:pl-8 m-0">BTC Minned</h2>
+        <h2 className="text-white font-semibold text-2xl pl-4 sm:pl-8 m-0">BTC Minned</h2>
       </div>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
-          width={500}
+          width={600}
           height={300}
           data={data}
           margin={{
