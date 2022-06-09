@@ -61,7 +61,7 @@ const MyGraph = ({ data }) => {
             <GradientColors3 />
           </defs>
           <Tooltip
-            itemStyle={{ color: "#fff", backgroundColor: "#0A1322" }}
+            itemStyle={{ color: "#fff", backgroundColor: "#0A1322", borderRadius: "10px" }}
             contentStyle={{ backgroundColor: "#0A1322" }}
           />
           <CartesianGrid strokeDasharray="4 4" stroke="#991BFA" opacity={0.4} />
