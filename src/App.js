@@ -7,7 +7,7 @@ import CustomBarChart from "./components/CustomBarChart";
 
 function App() {
   return (
-    <div className="container m-auto">
+    <div className="container m-auto px-5 lg:px-0">
       {/* <Analytics /> */}
 
 

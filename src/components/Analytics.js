@@ -21,8 +21,8 @@ function Analytics() {
   };
 
   return (
-    <div className="w-full h-96 rounded-lg bg-bg flex flex-col relative text-white pl-4 py-4 transition ease-in-out delay-150">
-      <div className="flex justify-between pb-4 pr-4">
+    <div className="w-full h-96 rounded-lg bg-bg flex flex-col relative text-white pl-2 sm:pl-4 py-2 sm:py-4 transition ease-in-out delay-150">
+      <div className="flex justify-between pb-2 pr-2 sm:pb-4 sm:pr-4">
         <h1 className="text-white font-semibold text-2xl pl-8">Community Investments</h1>
         <DropdownSelector fetchCustomData={fetchCustomData} />
       </div>
