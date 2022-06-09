@@ -13,7 +13,7 @@ function App() {
 
       <div className="flex items-center justify-center flex-wrap gap-5 py-10">
         {/* ----------------- First Card ----------------- */}
-        <div className="w-72 bg-bg-primary rounded-lg py-4 px-6 text-white">
+        <div className="w-72 h-28 bg-bg-primary rounded-lg py-4 px-6 text-white">
           <span className="tracking-wider text-gray-300">Total earning</span>
           <div className="flex space-x-1">
             <h2 className="font-bold text-3xl text-white py-1 m-0">$12,875</h2>
@@ -27,7 +27,7 @@ function App() {
         </div>
 
         {/* ----------------- Second Card ----------------- */}
-        <div className="w-72 bg-bg-primary rounded-lg py-4 px-6 text-white">
+        <div className="w-72 h-28 bg-bg-primary rounded-lg py-4 px-6 text-white">
           <span className="tracking-wider text-gray-300">Total BTC Mined</span>
           <div className="flex space-x-1">
             <h2 className="font-bold text-3xl text-white py-1 m-0">0.82875</h2>
@@ -40,7 +40,7 @@ function App() {
         </div>
 
         {/* ----------------- Third Card ----------------- */}
-        <div className="w-72 bg-bg-primary text-white p-2">
+        <div className="w-72 h-28 bg-bg-primary py-5 px-5 text-white">
           <div className="flex justify-between">
             <p className="m-0 font-semibold tracking-wide">Live Hash Rate</p>
             <span className="text-gray-500">98%</span>
@@ -56,7 +56,7 @@ function App() {
 
 
         {/* ----------------- Fourth Card ----------------- */}
-        <div className="w-72 bg-bg-primary rounded-lg py-4 px-6 text-white flex items-center space-x-4">
+        <div className="w-72 h-28 bg-bg-primary rounded-lg py-4 px-6 text-white flex items-center space-x-4">
           <div>
             <CircleProgress />
           </div>
