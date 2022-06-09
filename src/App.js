@@ -7,7 +7,7 @@ import BarChart from "./components/BarChart";
 
 function App() {
   return (
-    <div className="">
+    <div className="container m-auto">
       {/* <Analytics /> */}
 
 
@@ -67,11 +67,13 @@ function App() {
         </div>
       </div>
 
-
-      <div className="">
-        a
-        <BarChart />
+      <div className="flex items-center justify-center">
+        <Analytics />
       </div>
+
+      {/* <div className="">
+        <BarChart />
+      </div> */}
 
     </div>
   );

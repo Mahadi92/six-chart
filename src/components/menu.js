@@ -8,37 +8,22 @@ import { menu } from "./items";
 /**
  * Add your all dropdown categories here with unique key
  */
-const dropdownCategories = [
+const categories = [
   {
     key: 0,
-    content: "Today",
+    content: "Weekly",
     value: "Today",
   },
   {
     key: 1,
-    content: "Yesterday",
+    content: "Monthly",
     value: "Yesterday",
   },
   {
     key: 2,
-    content: "Last 7 days",
+    content: "Yearly",
     value: "Last_7_days",
-  },
-  {
-    key: 3,
-    content: "Last 14 days",
-    value: "Last_14_days",
-  },
-  {
-    key: 4,
-    content: "Last 30 days",
-    value: "Last_30_days",
-  },
-  {
-    key: 5,
-    content: "Last 90 days",
-    value: "Last_90_days",
-  },
+  }
 ];
 
 /**
@@ -74,18 +59,14 @@ export const DropdownSelector = ({ fetchCustomData }) => {
   };
 
   return (
-    <div className={classes.container}>
-      <Dropdown
-        overlay={menu(
-          handleDataFetching,
-          dropdownCategories,
-          dropdownCategories[activeTimeFrame]
-        )}
-      >
-        <Button>
-          {dropdownCategories[activeTimeFrame].content} <DownOutlined />
-        </Button>
-      </Dropdown>
+    <div className="flex flex-wrap gap-2 md:gap-2 xl:gap-8">
+      {
+        categories.map((category) => {
+          return (
+            <button onClick={() => handleDataFetching(category.key, category.value)} className="m-0 text-right sm:text-left text-base font-bold text-gray-500">{category.content}</button>
+          )
+        })
+      }
     </div>
   );
 };

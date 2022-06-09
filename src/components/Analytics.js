@@ -12,21 +12,8 @@ import dataSet from "./data";
 // import DropdownSelector from "./component/menu";
 // import dataSet from "./component/data";
 
-const useStyles = createUseStyles(() => ({
-  container: {
-    color: '#fff',
-    padding: '1rem',
-    transition: '0.3s ease-in-out',
-    width: '1200px',
-    height: '400px',
-    display: 'flex',
-    flexDirection: 'column',
-    position: 'relative'
-  },
-}));
 
 function Analytics() {
-  const classes = useStyles()
   const [data, setData] = useState(dataSet.Today);
 
   const fetchCustomData = (key) => {
@@ -34,9 +21,11 @@ function Analytics() {
   };
 
   return (
-    <div className={classes.container}>
-      <h1>Analytics</h1>
-      <DropdownSelector fetchCustomData={fetchCustomData} />
+    <div className="w-full h-96 rounded-lg bg-bg flex flex-col relative text-white pl-4 py-4 transition ease-in-out delay-150">
+      <div className="flex justify-between pb-4 pr-4">
+        <h1 className="text-white font-semibold text-2xl pl-8">Community Investments</h1>
+        <DropdownSelector fetchCustomData={fetchCustomData} />
+      </div>
       <MyGraph data={data} />
     </div>
   );
