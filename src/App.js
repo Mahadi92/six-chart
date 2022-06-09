@@ -40,7 +40,7 @@ function App() {
         </div>
 
         {/* ----------------- Third Card ----------------- */}
-        <div className="w-72 bg-bg-primary rounded-lg py-4 px-3 text-white">
+        <div className="w-72 bg-bg-primary text-white p-2">
           <div className="flex justify-between">
             <p className="m-0 font-semibold tracking-wide">Live Hash Rate</p>
             <span className="text-gray-500">98%</span>
