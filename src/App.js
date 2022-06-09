@@ -3,7 +3,7 @@ import Analytics from "./components/Analytics";
 import { IoMdArrowDropup } from "react-icons/io"
 import CircleProgress from "./components/CircleProgress";
 import LineChart from "./components/LineChart";
-import BarChart from "./components/BarChart";
+import CustomBarChart from "./components/CustomBarChart";
 
 function App() {
   return (
@@ -71,9 +71,9 @@ function App() {
         <Analytics />
       </div>
 
-      {/* <div className="">
-        <BarChart />
-      </div> */}
+      <div className="py-10">
+        <CustomBarChart />
+      </div>
 
     </div>
   );
